@@ -1,5 +1,5 @@
 # Code Showcase
- Een showcase van een deel van mijn Full-stack als web developer
+ Een showcase van een deel van werk als Full Stack Developer
 
 Het FRAMEWORK bestand is, zoals de naam aangeeft, een framework dat ik heb gemaakt om eenvoudig een nieuwe product formulier te maken. Het is gemaakt volgens de behoeften van mijn huidige werkgever.
 In deze staat is het leeg en moeten er nog steeds alle gegevens worden toegevoegd.
