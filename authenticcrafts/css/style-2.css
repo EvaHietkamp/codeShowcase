@@ -1,0 +1,482 @@
+* {
+  box-sizing: border-box;
+}
+/*colums*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0px;
+  border: 0px solid red;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Book'), url('ITCAvantGardeStdBk.woff') format('woff');
+    }
+
+html {
+background-color: rgb(255, 255, 255);
+
+}
+body {
+  margin: 0 0 40px; /* bottom = footer height */
+  font-family: 'ITC Avant Garde Gothic Std Book';
+  color: rgb(78, 78, 78);
+}
+
+.wrapper {
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, 0.53);
+  padding: 20px;
+
+}
+.logo {
+  text-align: center;
+}
+.logo img {
+
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.nav {
+  margin-top: 20px;
+  text-align: right;
+}
+.nav a {
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  padding: 10px;
+  font-weight: bold;
+}
+.nav a:hover {
+  color: rgb(255, 145, 0)
+}
+.enquire{
+  color: rgb(31, 31, 31);
+}
+.contactInfo {
+  margin-top: 10px;
+}
+.foot {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  overflow:hidden;
+}
+.foot a{
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+}
+.foot a:hover {
+  color: rgb(255, 145, 0)
+}
+
+.form {
+  padding: 20px;
+  border-radius: 4px;
+  color: rgb(78, 78, 78);
+}
+
+@media screen and (max-width: 680px) {
+  .col-1 {
+    display: none;
+  }
+  .logo img {
+    height: 70px;
+  }
+  .wrapper {
+    padding: 10px;
+    margin: 0px;
+  }
+  .nav {
+    margin: 0px 0pc 10px 0px;
+  }
+  .nav a {
+    clear: both;
+  }
+
+  .foot {
+    padding: 4px;
+  }
+}
+
+
+/*form css*/
+
+
+.stap {
+  font-size: 0.7em;
+  color: rgb(175, 178, 179);
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0px 10px 0px;;
+  padding: 0px;
+}
+span {
+  color: rgb(255, 130, 0);
+}
+.subtitle {
+font-size: 0.8em;
+margin-top: 1px;
+}
+.p {
+  display: inline;
+  font-size: 1em;
+  margin: 3px;
+}
+
+.text {
+  margin: 2px 0px 0px 0px;
+  border: 1px solid rgb(255, 130, 0);
+  width: 100%;
+  height: 30px;
+}
+.text:focus {
+  background-color: #ffffff;
+  border: 1px solid rgb(255, 130, 0);
+}
+#box {
+  width: auto;
+  padding: 5px;
+  margin: 5px;
+}
+textarea{
+  width: 80%;
+  height: 100px;
+  font-family: verdana, sans-serif;
+}
+::placeholder {
+    color: rgb(175, 178, 179);
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(175, 178, 179);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: rgb(175, 178, 179);
+}
+
+#required, #required2, #required3, #required4, #required5, #required6, #required7, #required8, #required9{
+  border-radius: 5px;
+  font-size: 0.8em;
+  color: white;
+  background-color: rgb(255, 130, 0);
+  width: 90%;
+}
+#myDIV, #myDIV2, #myDIV3, #myDIV4, #myDIV5, #myDIV6 {
+  display: none;
+  background-color: rgb(255, 130, 0);
+  padding: 5px 0px 5px 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+/*bedankt*/
+#myROLL, #myGEVEL, #myMISO, #myVISO, #myAIRCO, #myCV, #myKK, #mySS, #myKT, #mySCH, #myZP {
+  display: none;
+  background-color: rgb(255, 130, 0);
+  padding: 5px 0px 5px 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#next {
+  float: right;
+  width: 40%;
+  height:40px;
+  background-color: rgb(255, 130, 0);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5px;
+  display: block;
+  margin-top: 20px;
+}
+
+#next:hover {
+  background-color: rgb(242, 124, 0);
+  border: 2px inset rgb(255, 140, 5);
+}
+#next:active {
+  background-color: rgb(242, 124, 0);
+  border: 2px inset rgb(6, 11, 71);
+}
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .col-2 {
+      display: none;
+    }
+    .form {
+      padding: 10px;
+    }
+    .nav {
+      padding: 0px;
+      text-align: center;
+    }
+    input#next {
+      width: 100%;
+    }
+}
+#becheck {
+  display: block;
+  margin: 20px auto;
+  width: auto;
+  height: 150px;
+}
+#bedankt {
+  text-align: center;
+}
+/* The container radio butons*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: rgb(255, 130, 0);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+
+/* The container 2 checkboxs*/
+.container2 {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark2 {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container2 input:checked ~ .checkmark2 {
+  background-color: rgb(255, 130, 0);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark2:after {
+  content: "";
+
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container2 input:checked ~ .checkmark2:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container2 .checkmark2:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0px 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/*For bedankt pages radio buttons*/
+.checkmark3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(222, 221, 221);
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark3 {
+  background-color: #b9b8b8;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark3 {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark3:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark3:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark3:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+/*For bedankt pages checkboxs buttons*/
+.checkmark4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(222, 221, 221);
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark4 {
+  background-color: #b9b8b8;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container2 input:checked ~ .checkmark4 {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark4:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container2 input:checked ~ .checkmark4:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container2 .checkmark4:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0px 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

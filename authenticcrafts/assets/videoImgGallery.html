@@ -1,0 +1,36 @@
+<div class="imgItemPage col-8">
+  <div class="previewItemPage col-1">
+    <img src="<?php echo $productImg51 ?>" onclick="myFunctionVideo(this)">
+    <img src="<?php echo $productImg51 ?>" onclick="myFunction(this)">
+    <img src="<?php echo $productImg52 ?>" onclick="myFunction(this)">
+    <img src="<?php echo $productImg53 ?>" onclick="myFunction(this)">
+    <img src="<?php echo $productImg54 ?>" onclick="myFunction(this)">
+  </div>
+  <div class="fullImgItemPage col-11">
+    <img id="imageBox" src="<?php echo $productImg51 ?>" alt="">
+  </div>
+  <div class="previewItemPageMob col-1">
+    <img src="<?php echo $productImg51 ?>" onclick="myFunction(this)">
+    <img src="<?php echo $productImg52 ?>" onclick="myFunction(this)">
+    <img src="<?php echo $productImg53 ?>" onclick="myFunction(this)">
+    <img src="<?php echo $productImg54 ?>" onclick="myFunction(this)">
+  </div>
+</div><!-- end .imgItemPage -->
+<script>
+  function myFunction(smallImg)
+  {
+    var fullImg = document.getElementById('imageBox');
+    fullImg.src = smallImg.src;
+  }
+  function myFunctionVideo(smallVideo)
+  {
+    var videoM = '<video width="100%;" height="100%;" controls autoplay loop muted>' +
+                  '<source src="../../images/Lair For Looping.mp4" type="video/mp4">' +
+                  '</video>';
+    var fullImg = document.getElementById('imageBox');
+    fullImg.src = videoM;
+  }
+</script>
+<video id="videoM" width="100%;" height="100%;" controls autoplay loop muted>
+<source src="../../images/Lair For Looping.mp4" type="video/mp4">
+</video>
